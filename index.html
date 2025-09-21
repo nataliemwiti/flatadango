@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flatadango tickets</title>
+</head>
+<body>
+  <header>
+    <h1>FLATADANGO</h1>
+    <h2>Buy Movie Tickets</h2>
+  </header>
+
+  <main style="display: flex; gap: 2rem;">
+    <aside>
+      <h3>Now Showing</h3>
+      <ul id="films">
+        <li>Loading movies...</li>
+      </ul>
+    </aside>
+
+    <div id="poster-area">
+      <img id="poster" src="" alt="Movie Poster" width="300">
+    </div>
+
+    <section id="movie-details">
+      <h3 id="movie-title">Select a Movie</h3>
+      <p><strong>Runtime:</strong> <span id="runtime"></span></p>
+      <p><strong>Showtime:</strong> <span id="showtime"></span></p>
+      <p><strong>Description:</strong> <span id="description"></span></p>
+      <p><strong>Tickets Available:</strong> <span id="tickets"></span></p>
+      <button id="buy-ticket">Buy Ticket</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flatdango Theater</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
