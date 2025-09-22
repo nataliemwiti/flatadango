@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  color: #333;
+}
+
+.navbar {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;    
+  text-align: left;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+.navbar .tagline {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 0.3rem; 
+}
+
+.ticket {
+  color: orange;   
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.container {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.sidebar {
+  flex: 1;
+  max-width: 200px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  height: 500px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sidebar li:hover {
+  color: #007bff;
+}
+
+.poster-section {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster-section img {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.details {
+  flex: 2;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.details h2 {
+  font-size: 1.25rem;
+}
+
+.runtime {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.description {
+  font-size: 1rem;
+}
+
+.showtime-tickets {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+#buy-ticket {
+  background-color: #ff5722;
+  color: white;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#buy-ticket:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.sold-out {
+  color: gray;
+  text-decoration: line-through;
+}

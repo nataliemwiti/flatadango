@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>flatadango tickets</title>
-</head>
-<body>
-  <header>
-    <h1>FLATADANGO</h1>
-    <h2>Buy Movie Tickets</h2>
-  </header>
 
-  <main style="display: flex; gap: 2rem;">
-    <aside>
+<head>
+  <meta charset="UTF-8" />
+  <title>Flatdango Movie Tickets</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    🎟️ FLATDANGO
+  </div>
+  <div class="tagline">BUY MOVIE TICKETS</div>
+</header>
+
+  <main class="container">
+    
+    <aside class="sidebar">
       <h3>Now Showing</h3>
-      <ul id="films">
-        <li>Loading movies...</li>
-      </ul>
+      <ul id="films"></ul>
     </aside>
 
-    <div id="poster-area">
-      <img id="poster" src="" alt="Movie Poster" width="300">
-    </div>
+    <section class="poster-section">
+      <img id="poster" src="" alt="Movie Poster">
+    </section>
 
-    <section id="movie-details">
-      <h3 id="movie-title">Select a Movie</h3>
+    <section class="details">
+      <h2 id="movie-title">Select a Movie</h2>
       <p><strong>Runtime:</strong> <span id="runtime"></span></p>
       <p><strong>Showtime:</strong> <span id="showtime"></span></p>
       <p><strong>Description:</strong> <span id="description"></span></p>
       <p><strong>Tickets Available:</strong> <span id="tickets"></span></p>
       <button id="buy-ticket">Buy Ticket</button>
     </section>
+
   </main>
 
   <footer>
@@ -38,4 +44,5 @@
 
   <script src="index.js"></script>
 </body>
+
 </html>
